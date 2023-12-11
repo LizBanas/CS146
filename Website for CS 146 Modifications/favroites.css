@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fa80806f;
+    text-align: center;
+}
+
+
+header {
+    background-color:#b55454;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pacifico';
+    color: #fff;
+    letter-spacing: 4px;
+}
+
+ol {
+    text-align: left;
+    margin: 0 auto;   
+    max-width: 600px; 
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: right;
+    line-height: 100px;
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding: 36px 10px;
+    margin: 0 1px;
+}
+
+nav ul a:hover{
+    background:#fc7a7a;
+    color: #b55454;
+    font-weight: 500;
+}
+
+.content{
+    position: relative;
+    top: 120px;
+
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fc7a7a;
+    text-align: center;
+    border-radius: 15px;
+}
+section ul { 
+    list-style-position: inside;
+}
+
+/* Center images and text */
+div {
+    text-align: center;
+}
+
+div img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #b55454;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}

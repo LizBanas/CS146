@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+		<script src="script.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <title>College Eats</title>
+    </head>
+
+    <body>
+       
+        <hr>
+        <div class = "box-area">
+            <header>
+                <div class= "wrapper">
+                    <div class="logo">
+                        <a href="#">CollegeEats</a>
+                    </div>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="favorites.html">Favorites</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+            </header>
+        </div>
+        <div class = "content">
+            <div class ="banner-area">
+                <img src="images/Food Banner.jpg" alt="Food Banner" style="width:100%;"/>
+                <div class="Title"> CollegeEats</div>
+            </div>
+            <hr>
+            <div class ="search">
+                <h3>Search By Your Diet Restrictions:</h3>
+			    <input type="button" value="Vegetarian" onclick="filterRecipes('V');"/>
+			    <input type="button" value="Pescatarian" onclick="filterRecipes('P');"/>
+			    <input type="button" value="Lactose-Intolerant" onclick="filterRecipes('LI');"/>
+			    <input type="button" value="Reset" onclick="resetFilters();"/>
+            </div>
+            <div class="foods">
+            
+                <div id="oats">
+                    
+                    <h2>Overnight Oats</h2>
+                    <img src="images/overnight-oats.jpg" alt="Picture of Overnight Oats" width="400" height="250"/>
+                    <h3>Tags</h3> <p>Vegetarian  Pescatarian</p>
+                    <p> <strong>Description:</strong> Perfect Breakfast Item to start your day </p>
+                    <p> <strong>Instructions:</strong> Soak Oats in Jar or Cup and Leave in fridge overnight </p>
+                    <div id="userRating1"></div> 
+                    <div id="rating">
+                        <p><strong>Rate this recipe:</strong></p>
+                        <button onclick="rateRecipe1(1)">1</button>
+                        <button onclick="rateRecipe1(2)">2</button>
+                        <button onclick="rateRecipe1(3)">3</button>
+                        <button onclick="rateRecipe1(4)">4</button>
+                        <button onclick="rateRecipe1(5)">5</button>
+                
+                    <hr>
+            
+                    </div>
+                     </div>
+			
+            
+                </div>
+                <div id="grilledCheese">
+
+                    <h2>Grilled Cheese</h2>
+                    <img src="images/Grilled Cheese.jpg" alt="Picture of Grilled Cheese" width="400" height="250"/>
+                    <h3>Tags</h3> <p>Vegetarian  Pescatarian</p>
+                    <p> <strong>Description:</strong> Mid-day Snack Perfect for a Busy Day</p>
+                    <p> <strong>Instructions:</strong> Need a Pan, bread, butter, and some cheese of your choice</p>
+                    <div id="userRating2"></div> 
+                    <div id="rating">
+                        <p><strong>Rate this recipe:</strong></p>
+                        <button onclick="rateRecipe2(1)">1</button>
+                        <button onclick="rateRecipe2(2)">2</button>
+                        <button onclick="rateRecipe2(3)">3</button>
+                        <button onclick="rateRecipe2(4)">4</button>
+                        <button onclick="rateRecipe2(5)">5</button>
+                    <hr>
+                    </div>
+           
+                    </div>
+			
+            
+                </div>
+                    
+                <div id="salad">
+                    <h2>Chicken and Avocado Salad</h2>
+                    <img src="images/GrilledChickenSalad.jpg" alt="Picture of Grilled Chicken Salad" width="400" height="350"/>
+                    <h3>Tags</h3> <p>Lactose Intolerant</p>
+                    <p> <strong>Description:</strong> Prefect lunch item for people in a rush </p>
+                    <p> <strong>Instructions:</strong> Aquire all the incredients that you need, chop it up, and combine </p>
+                    <div id="userRating3"></div> 
+                    <div id="rating">
+                        <p><strong>Rate this recipe:</strong></p>
+                        <button onclick="rateRecipe3(1)">1</button>
+                        <button onclick="rateRecipe3(2)">2</button>
+                        <button onclick="rateRecipe3(3)">3</button>
+                        <button onclick="rateRecipe3(4)">4</button>
+                        <button onclick="rateRecipe3(5)">5</button>
+                        <hr>
+                    </div>
+                    </div>
+			
+                </div>
+                <div id="pizza">
+                    <h2>Post 4</h2>
+                    <img src="images/Pizza.jpg" alt="Picture of Pizza" width="400" height="275"/>
+                    <h3>Tags</h3> <p>Vegetarian  Pescatarian</p>
+                    <p> <strong>Description:</strong> Perfect lunch or dinner item for any day of the week </p>
+			        <p> <strong>Instructions:</strong> Pleace Sauce and toppings on top of pizza dough and throw in oven </p>
+                    <div id="userRating4"></div> 
+                    <div id="rating">
+                        <p><strong>Rate this recipe:</strong></p>
+                        <button onclick="rateRecipe4(1)">1</button>
+                        <button onclick="rateRecipe4(2)">2</button>
+                        <button onclick="rateRecipe4(3)">3</button>
+                        <button onclick="rateRecipe4(4)">4</button>
+                        <button onclick="rateRecipe4(5)">5</button>
+                        <hr>
+                    </div>
+                    </div>
+                </div>
+                <div id="pasta">
+                    <h2>Pasta in Cream Tomato Sauce</h2>
+                    <img  src="images/Pasta.jpeg" alt="Picture of Pasta" width="400" height="300"/>
+                    <h3>Tags</h3> <p>Vegetarian</p>
+                    <p> <strong>Description:</strong> Perfect Dinner item for Weekeday, Weekend, or Special Occasions </p>
+                    <p> <strong>Instructions:</strong> Boil Pasts and then chop up vegtables while that is cooking, and then mix everything together </p>
+                    <div id="userRating5"></div> 
+                    <div id="rating">
+                        <p><strong>Rate this recipe:</strong></p>
+                        <button onclick="rateRecipe5(1)">1</button>
+                        <button onclick="rateRecipe5(2)">2</button>
+                        <button onclick="rateRecipe5(3)">3</button>
+                        <button onclick="rateRecipe5(4)">4</button>
+                        <button onclick="rateRecipe5(5)">5</button>
+                        <hr>
+                    </div>
+                    </div>
+                </div>
+                <div id="ramen">
+                    <h2>Ramen</h2>
+                    <img  src="images/Ramen.jpeg" alt="Picture of Ramen" width="400" height="420"/>
+                    <h3>Tags</h3> <p>Lactose-Intolerant</p>
+                    <p> <strong>Description:</strong> Perfect Midday Lunch or Dinner during a busy day</p>
+                    <p> <strong>Instructions:</strong> Boil Broth and place vegetables to start, halfway through throw in noodles, finish and serve </p>
+			        <div id="userRating6"></div> 
+                    <div id="rating">
+                        <p><strong>Rate this recipe:</strong></p>
+                        <button onclick="rateRecipe6(1)">1</button>
+                        <button onclick="rateRecipe6(2)">2</button>
+                        <button onclick="rateRecipe6(3)">3</button>
+                        <button onclick="rateRecipe6(4)">4</button>
+                        <button onclick="rateRecipe6(5)">5</button>
+                        <hr>
+                    </div>
+                    </div>
+			
+                </div>
+        </div>
+		<br><br>
+
+        <footer>
+            <p><strong>Powered by:</strong> Students of CS146 @Stevens Institute</p>
+        </footer>
+
+    </body>
+</html>
